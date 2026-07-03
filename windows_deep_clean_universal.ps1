@@ -86,8 +86,6 @@ foreach ($folder in $junkfolders) {
     Remove-Item -Path $folder -Recurse -Force -ErrorAction SilentlyContinue
 }
 
-Write-Host "  Running disk cleanup..." -ForegroundColor Gray
-Start-Process cleanmgr -ArgumentList "/sagerun:1" -Wait -WindowStyle Hidden
 Write-Host "  Temporary files cleaned!" -ForegroundColor Green
 
 # ============================================================
@@ -325,4 +323,3 @@ if ($isLaptop) {
 }
 Write-Host ""
 Write-Host "  RESTART YOUR PC NOW to apply all changes!" -ForegroundColor Yellow
-Read-Host "`nPressione ENTER para fechar"
