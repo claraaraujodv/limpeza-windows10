@@ -325,3 +325,4 @@ if ($isLaptop) {
 }
 Write-Host ""
 Write-Host "  RESTART YOUR PC NOW to apply all changes!" -ForegroundColor Yellow
+Read-Host "`nPressione ENTER para fechar"
